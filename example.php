@@ -9,4 +9,4 @@ $classAPI = New classAPI\API();
 $classAPI->domain = "localhost:8080";
 $classAPI->ssl = '';
 
-echo $classHTTP->forwarder();
+echo $classAPI->forwarder();
