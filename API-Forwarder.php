@@ -16,7 +16,7 @@ class API
 
     }
 
-    public function requester($url, $method, $headers, $body)
+    public function requester($url, $method, $headers, $body = null)
     {
 
         $c = curl_init();
