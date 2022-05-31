@@ -1,12 +1,12 @@
 <?php
 
-require_once("API-Forwarder.php");
+require_once("forwarder.php");
 
-use APIForwarder as classForwarder;
+use APIForwarder as classAPI;
 
-$classHTTP = New classForwarder\API();
+$classAPI = New classAPI\API();
 
-$classHTTP->domain = "localhost:8000";
-$classHTTP->ssl = '';
+$classAPI->domain = "localhost:8080";
+$classAPI->ssl = '';
 
 echo $classHTTP->forwarder();
